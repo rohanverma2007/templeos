@@ -1,2 +1,3 @@
-# templeos
-# templeos
+# TempleOS
+
+Made by the king
