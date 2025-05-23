@@ -30,5 +30,16 @@
 <body>
     <h1>The King</h1>
     <img src="king.png" alt="The King">
+    <script>
+        var clickCount = 0;
+        const img = document.getElementById('kingImage');
+
+        img.addEventListener('click', () => {
+            clickCount++;
+            if (clickCount === 10) {
+                img.src = 'king.gif'; // Swap the image with your GIF here
+            }
+        });
+    </script>
 </body>
 </html>
