@@ -24,6 +24,7 @@
             width: 300px;
             border: 5px solid #b8860b;
             height: auto;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -32,13 +33,14 @@
     <img id="kingImage" src="king.png" alt="The King">
     
     <script>
-        var clickCount = 0;
+        let clickCount = 0;
         const img = document.getElementById('kingImage');
 
         img.addEventListener('click', () => {
             clickCount++;
+            console.log(`Clicked ${clickCount} times`);
             if (clickCount === 10) {
-                img.src = 'king.gif'; // Swap the image with your GIF here
+                img.src = 'king.gif'; // Make sure this file exists
             }
         });
     </script>
